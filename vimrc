@@ -1,9 +1,9 @@
-set nocompatible              " be iMproved
+set nocompatible                                " only vim allowed
 filetype off 
 
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim               " vundle stuff
 
-call vundle#begin()
+call vundle#begin()                             
 
   Plugin 'VundleVim/Vundle.vim'
 
@@ -24,13 +24,12 @@ call vundle#begin()
 
 call vundle#end()
 
-set laststatus=2
+set laststatus=2                                " airline enable statusbar permanent
 
-" filetype plugin indent on
-set expandtab
+set expandtab                                   " replace tabs with 2 spaces
 set shiftwidth=2
 set softtabstop=2
 
-syntax on
+syntax on                                       " enable syntax highlighting
 
-set number
+set number                                      " enable line numbers
