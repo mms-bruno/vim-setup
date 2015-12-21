@@ -10,6 +10,7 @@ call vundle#begin()
   Plugin 'honza/vim-snippets'
 
   " Puppet
+  " Plugin 'rodjek/vim-puppet'
   Plugin 'puppetlabs/puppet-syntax-vim'
 
   " Git
@@ -21,6 +22,14 @@ call vundle#begin()
 
   " Ultimative Plugin
   Plugin 'bling/vim-airline'
+
+
+  Plugin 'scrooloose/nerdtree'
+  Plugin 'scrooloose/syntastic'
+" Plugin 'Valloric/YouCompleteMe'
+" Plugin 'kien/ctrlp.vim'
+" Plugin 'rking/ag.vim'
+" Plugin 'dkprice/vim-easygrep'
 
 call vundle#end()
 
