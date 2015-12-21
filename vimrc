@@ -1,7 +1,11 @@
-set nocompatible                                " only vim allowed
+" only vim allowed
+set nocompatible
+
 filetype off 
 
-set rtp+=~/.vim/bundle/Vundle.vim               " vundle stuff
+
+" Vundle
+set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()                             
 
@@ -33,12 +37,22 @@ call vundle#begin()
 
 call vundle#end()
 
-set laststatus=2                                " airline enable statusbar permanent
 
-set expandtab                                   " replace tabs with 2 spaces
+
+" airline enable statusbar permanent
+set laststatus=2
+
+" NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+" tabs settings
+set expandtab
 set shiftwidth=2
 set softtabstop=2
 
-syntax on                                       " enable syntax highlighting
+" enable syntax highlighting
+syntax on
 
-set number                                      " enable line numbers
+" enable line numbers
+set number
+highlight LineNr ctermfg=237 guifg=#444444      " rgb=68,68,68
